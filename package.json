@@ -14,12 +14,12 @@
     "validator": "^13.9.0"
   },
   "scripts": {
-    "start": "node server.js",
-    "start-server": "server.js"
+    "start": "node server.js"
   },
-  "name": "projet_salah",
+  "name": "starter-express-api",
   "version": "1.0.0",
   "main": "server.js",
+  "devDependencies": {},
   "keywords": [],
   "author": "",
   "license": "ISC",
