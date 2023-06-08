@@ -13,9 +13,6 @@
     "nodemon": "^2.0.22",
     "validator": "^13.9.0"
   },
-  "scripts": {
-    "start": "node server.js"
-  },
   "name": "starter-express-api",
   "version": "1.0.0",
   "main": "server.js",
@@ -23,5 +20,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "scripts": {
+    "start": "node server.js",
+    "start-server": "server.js"
+  }
+  
 }
