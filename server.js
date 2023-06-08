@@ -9,7 +9,7 @@ const path = require('path')
 const app = express()
 
 require('dotenv').config()
-const uri = process.env.uri
+const uri = process.env.URI
 const port = process.env.PORT || 3000
 
 const errController = require('./controller/err')
