@@ -10,7 +10,7 @@ const app = express()
 
 require('dotenv').config()
 const uri = process.env.uri
-const port = process.env.port || 3000
+const port = process.env.PORT || 3000
 
 const errController = require('./controller/err')
 const userRoutes = require('./routes/user')
