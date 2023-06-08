@@ -1,4 +1,4 @@
-exports.getHome = (req, res, next)=>{
+exports.getHome = async (req, res, next)=>{
     const user = req.session.user
     let isAdmin = false;
     if(user){
@@ -8,7 +8,11 @@ exports.getHome = (req, res, next)=>{
             isAdmin = false;
         }
     }
-    res.render('home', {user, isAdmin})
+    try {
+        res.render('home', { user, isAdmin });
+      } catch (err) {
+        console.log(err);
+      }
 }
 exports.postHome = (req, res, next)=>{
     
