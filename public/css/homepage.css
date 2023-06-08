@@ -1,0 +1,112 @@
+body {
+    font-family: 'Lobster', cursive;
+    background-color: #FDF5E6;
+    color: #7A4E39;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .slider-container {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    flex: 1 0 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .slide1 {
+    background-image: url('/public/img/coffee-img-header-4.jpg');
+    background-size: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+  
+  .slide2 {
+    background-image: url('/public/img/coffee-img-header-5.jpg');
+    background-size: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+  
+  .slide3 {
+    background-image: url('/public/img/coffee-img-header-6.jpg');
+    background-size: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+ 
+  }
+  .slide4 {
+    background-image: url('/public/img/coffee-img-header-7.jpg');
+    background-size: 100%;
+    width: 100%;
+ 
+  }
+  
+  .animated-text {
+    opacity: 0;
+    transform: translateY(15px);
+    animation: apparition 0.6s 0.4s ease forwards;
+  }
+
+  
+  .slider-controls {
+    width: 100%;
+    position: relative;
+    bottom: 350px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .slider-control{
+    border: none;
+    color: #7A4E39;
+    background-color: #FDF5E6;
+    padding: 0 13px 7px;
+    border-radius: 8px;
+    margin: 8px;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  .slider-control:hover{
+    transition: 0.3s;
+    background-color: #ecdfc7;
+    color: #5a3321;
+  }
+  @media (max-width: 768px) {
+    .slider-controls {
+      display: none;
+    }
+  }
+  

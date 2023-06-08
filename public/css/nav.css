@@ -1,0 +1,48 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #7A4E39;
+}
+nav div{
+    opacity: 0;
+    animation: apparition 0.4s 0.4s ease forwards;
+}
+nav .navbar-auth, nav .navbar-collapse, .navbar-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5px 15px;
+}
+nav .navbar-auth a, nav .navbar-collapse a {
+    color: white;
+    border-bottom: 2px solid #38221000;
+    padding: 5px;
+    margin: 5px;
+    font-family: 'Lobster', cursive;
+    font-size: 22px;
+    text-decoration: none;
+    transition: 0.4s;
+}
+nav .logo{
+    width: 80px;
+    margin: 4px 30px;
+    text-decoration: none;
+}
+nav .navbar-auth a:hover, nav .navbar-collapse a:hover{
+    transition: 0.3s;
+    color: #382210;
+    border-bottom: 2px solid #382210;
+}
+nav li{
+    list-style: none;
+}
+nav .navbar-auth img{
+    width: 30px;
+}
+nav .navbar-auth a{
+    border: none;
+}
+nav .navbar-auth a:hover{
+    border: none;
+}

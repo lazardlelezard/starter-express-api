@@ -1,0 +1,61 @@
+/* ///////////////////////inscription/////////////////////////// */
+
+body {
+    font-family: 'Lobster', cursive;
+    background-color: #FDF5E6;
+    color: #7A4E39;
+  }
+  form{
+    opacity: 0;
+    animation: apparition 0.4s 0.3s ease forwards;
+  }
+  .container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #FDF5E6;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  input {
+    display: block;
+    width: 90%;
+    margin: 15px auto;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #7A4E39;
+    border-radius: 5px;
+    transition: 0.4s;
+    outline: 0;
+  }
+  
+  input[type="submit"] {
+    margin: auto;
+    background-color: #7A4E39;
+    color: #FFFFFF;
+    font-family: 'Lobster', cursive;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #5E3B29;
+  }
+  
+  input[type="submit"]:focus {
+    outline: none;
+  }
+
+  input:focus{
+    transition: 0.3s;
+    box-shadow: 0 0 0 5px #5E3B29;
+  }

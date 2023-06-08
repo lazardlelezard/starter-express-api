@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Compte</title>
+  <link rel="stylesheet" href="/public/css/style.css">
+  <link rel="stylesheet" href="/public/css/nav.css">
+  <link rel="stylesheet" href="/public/css/stylenav.css">
+  <link rel="stylesheet" href="/public/css/styleuser.css">
+  <link rel="shortcut icon" href="/public/img/coffee-logo.png" type="image/x-icon">
+</head>
+<body>
+    <% if(user){ %>
+        <nav class="navbar">
+            <a href="/"><img class="logo" src="/public/img/coffee-logo.png" alt=""></a>
+            <div class="navbar-collapse">
+                  <a href="/" class="navbar-auth-link">Retour</a>
+                </div>
+            </div>
+        </nav>
+    <% } %>
+    <h1>Bienvenue <%= user.prenom %></h1>
+    
+    <div class="info-compte">
+        <h3>Information du compte</h3>
+        <div class="info-compte-2">
+            <div class="presentation">
+                <h3>Nom : </h3>
+                <h3>Prénom : </h3>
+                <h3>Email : </h3>
+            </div>
+            <div class="presentation">
+                <h3><%= user.nom %></h3>
+                <h3><%= user.prenom %></h3>
+                <h3><%= user.email %></h3>            
+            </div>
+        </div>
+    </div>
+    <form method="POST">
+        <button type="submit">Déconnexion</button>
+    </form>
+</body>
+</html>
