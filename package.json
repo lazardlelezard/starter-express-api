@@ -14,7 +14,8 @@
     "validator": "^13.9.0"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "start-server": "server.js"
   },
   "name": "projet_salah",
   "version": "1.0.0",
